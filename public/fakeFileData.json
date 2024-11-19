@@ -1,0 +1,333 @@
+[
+    {
+      "id": "1",
+      "adventureTitle": "Everest Base Camp Trek",
+      "image": "https://plus.unsplash.com/premium_photo-1682716827789-1ab8515bcca0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8RXZlcmVzdCUyMEJhc2UlMjBDYW1wJTIwVHJla3xlbnwwfHwwfHx8MA%3D%3D",
+      "categoryName": "Mountain Trek",
+      "shortDescription": "Experience the adventure of a lifetime trekking to the base of the world's tallest mountain.",
+      "adventureCost": "$1,800",
+      "bookingAvailability": "Available for 2024",
+      "location": "Nepal, Himalayas",
+      "duration": "14 days",
+      "adventureLevel": "Challenging",
+      "includedItems": [
+        "Tea house accommodations",
+        "Professional guide and porters",
+        "Meals (breakfast, lunch, dinner)",
+        "All necessary permits",
+        "Airport transfers"
+      ],
+      "ecoFriendlyFeatures": [
+        "Reusable water stations along the route",
+        "Community-supported accommodations",
+        "Proper waste disposal practices"
+      ],
+      "maxGroupSize": 12,
+      "specialInstructions": [
+        "Prepare for high altitude; acclimatization days are included.",
+        "Bring reusable water bottles and avoid single-use plastics.",
+        "Weather can be unpredictable; pack warm and waterproof gear."
+      ]
+    },
+    {
+      "id": "2",
+      "adventureTitle": "Inca Trail to Machu Picchu",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmC6yEg4EMM_aF__pKxJ-Q9IW8SPPmFop66g&s",
+      "categoryName": "Mountain Trek",
+      "shortDescription": "Hike the legendary Inca Trail through breathtaking landscapes to the historic site of Machu Picchu.",
+      "adventureCost": "$1,200",
+      "bookingAvailability": "Seasonal (April - October)",
+      "location": "Peru, Andes",
+      "duration": "4 days",
+      "adventureLevel": "Moderate",
+      "includedItems": [
+        "Camping equipment",
+        "Meals and snacks",
+        "Licensed guide",
+        "Permits and entry to Machu Picchu",
+        "Transportation to trailhead"
+      ],
+      "ecoFriendlyFeatures": [
+        "Low-impact campsites",
+        "Guides trained in Leave No Trace principles",
+        "Biodegradable waste bags provided"
+      ],
+      "maxGroupSize": 10,
+      "specialInstructions": [
+        "Wear comfortable, broken-in hiking shoes.",
+        "Pack lightly, as porters have weight limits.",
+        "Consider altitude sickness medication if needed."
+      ]
+    },
+    {
+      "id": "3",
+      "adventureTitle": "Kilimanjaro Summit Trek",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBMdTO2h8vsv5bQ5PULvcPAfaTtm4JuwdG9A&s",
+      "categoryName": "Mountain Trek",
+      "shortDescription": "Summit Africa's tallest peak via the scenic Machame Route with expert guides.",
+      "adventureCost": "$2,500",
+      "bookingAvailability": "Year-round",
+      "location": "Tanzania, Mount Kilimanjaro",
+      "duration": "7 days",
+      "adventureLevel": "Difficult",
+      "includedItems": [
+        "Camping gear and equipment",
+        "Three meals daily",
+        "Certified guides and porters",
+        "Park entrance fees",
+        "Airport transfers"
+      ],
+      "ecoFriendlyFeatures": [
+        "Leave No Trace trained guides",
+        "Responsible waste management practices",
+        "Eco-friendly cooking methods"
+      ],
+      "maxGroupSize": 15,
+      "specialInstructions": [
+        "Prepare for variable weather conditions.",
+        "Layered clothing is recommended for temperature changes.",
+        "Stay hydrated to minimize altitude sickness risks."
+      ]
+    },
+    {
+
+      
+        "id": "4",
+        "adventureTitle": "Kenya Big Five Safari",
+        "image": "https://media.istockphoto.com/id/1537361670/photo/three-male-cheetahs-at-a-dead-tree.webp?a=1&b=1&s=612x612&w=0&k=20&c=WXCqBIZ3wd2GfXPW3j-1LSJBwr8IpjWLk2WPWrfLdmo=",
+
+        "categoryName": "Wildlife Safari",
+        "shortDescription": "Explore Kenya's Maasai Mara Reserve and witness the Big Five in their natural habitat.",
+        "adventureCost": "$2,200",
+        "bookingAvailability": "Open year-round",
+        "location": "Kenya, Maasai Mara",
+        "duration": "7 days",
+        "adventureLevel": "Moderate",
+        "includedItems": [
+          "Guided game drives",
+          "Luxury tent accommodations",
+          "All meals and refreshments",
+          "Park entrance fees",
+          "Airport transfers"
+        ],
+        "ecoFriendlyFeatures": [
+          "Eco-friendly lodges with solar power",
+          "Waste management and recycling",
+          "Support for local conservation projects"
+        ],
+        "maxGroupSize": 8,
+        "specialInstructions": [
+          "Bring binoculars and a camera for wildlife photography.",
+          "Wear neutral-colored clothing to blend into the environment.",
+          "Respect wildlife and maintain safe distances at all times."
+        ]
+      },
+      {
+        "id": "5",
+        "adventureTitle": "Botswana Okavango Delta Safari",
+        "image": "https://media.istockphoto.com/id/1063469224/photo/aerial-view-of-elephants-okavango-delta-botswana-africa.webp?a=1&b=1&s=612x612&w=0&k=20&c=atezZ1MCY8ISw8UiZIR6_jtqQQE4g30j9JA16e-RhJQ=",
+
+        "categoryName": "Wildlife Safari",
+        "shortDescription": "Venture into the Okavango Delta for an unforgettable water-based safari experience.",
+        "adventureCost": "$3,000",
+        "bookingAvailability": "Best between May and October",
+        "location": "Botswana, Okavango Delta",
+        "duration": "5 days",
+        "adventureLevel": "Moderate",
+        "includedItems": [
+          "Guided mokoro (canoe) rides",
+          "Bushwalks with professional guides",
+          "Meals and beverages",
+          "Eco-friendly lodge accommodations",
+          "Park fees"
+        ],
+        "ecoFriendlyFeatures": [
+          "Solar-powered accommodations",
+          "Water conservation measures",
+          "Community-supported tourism initiatives"
+        ],
+        "maxGroupSize": 6,
+        "specialInstructions": [
+          "Wear comfortable and quick-dry clothing.",
+          "Follow guide instructions for safety near waterways.",
+          "Respect the habitat; dispose of waste responsibly."
+        ]
+      },
+      {
+        "id": "6",
+        "adventureTitle": "Tanzania Serengeti Migration Safari",
+        "image": "https://plus.unsplash.com/premium_photo-1664302670899-44a5daac162d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8VGFuemFuaWElMjBTZXJlbmdldGklMjBNaWdyYXRpb24lMjBTYWZhcml8ZW58MHx8MHx8fDA%3D",
+
+        "categoryName": "Wildlife Safari",
+        "shortDescription": "Witness the Great Migration as millions of animals traverse the Serengeti plains.",
+        "adventureCost": "$2,800",
+        "bookingAvailability": "Best from June to October",
+        "location": "Tanzania, Serengeti National Park",
+        "duration": "6 days",
+        "adventureLevel": "Moderate",
+        "includedItems": [
+          "4x4 guided game drives",
+          "Mobile camping experience",
+          "All meals and beverages",
+          "Park permits and fees",
+          "Transportation from Arusha"
+        ],
+        "ecoFriendlyFeatures": [
+          "Low-impact mobile camps",
+          "Solar-powered facilities",
+          "Supports anti-poaching initiatives"
+        ],
+        "maxGroupSize": 10,
+        "specialInstructions": [
+          "Pack light; mobile camps have limited space.",
+          "Binoculars and cameras are recommended for migration viewing.",
+          "Wear layers for changing weather conditions."
+        ]
+      },
+      {
+
+        
+          "id": "7",
+          "adventureTitle": "Amazon Rainforest Expedition",
+          "image": "https://images.unsplash.com/photo-1707007432341-3e2e1e1a894b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8QW1hem9uJTIwUmFpbmZvcmVzdCUyMEV4cGVkaXRpb258ZW58MHx8MHx8fDA%3D",
+
+          "categoryName": "Forest Expedition",
+          "shortDescription": "Embark on an immersive journey through the heart of the Amazon, discovering unique wildlife and indigenous culture.",
+          "adventureCost": "$2,500",
+          "bookingAvailability": "Available year-round",
+          "location": "Brazil, Amazon Rainforest",
+          "duration": "10 days",
+          "adventureLevel": "Challenging",
+          "includedItems": [
+            "Guided jungle treks",
+            "Canoe excursions along the river",
+            "Eco-lodge accommodations",
+            "All meals (local and organic)",
+            "Transportation from Manaus"
+          ],
+          "ecoFriendlyFeatures": [
+            "Sustainable eco-lodges with rainwater harvesting",
+            "Waste recycling and composting systems",
+            "Eco-friendly canoe transportation",
+            "Local community engagement and support"
+          ],
+          "maxGroupSize": 8,
+          "specialInstructions": [
+            "Prepare for hot and humid conditions; wear lightweight clothing.",
+            "Pack insect repellent and waterproof gear.",
+            "Respect local wildlife and follow the guide's safety protocols."
+          ]
+        },
+        {
+          "id": "8",
+          "adventureTitle": "Black Forest Hiking Adventure",
+          "image": "https://images.unsplash.com/photo-1593519467617-b11615e8584d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fEJsYWNrJTIwRm9yZXN0JTIwSGlraW5nJTIwQWR2ZW50dXJlfGVufDB8fDB8fHww",
+
+          "categoryName": "Forest Expedition",
+          "shortDescription": "Hike through the enchanting Black Forest in Germany, uncovering its mystical trails and ancient woodlands.",
+          "adventureCost": "$1,200",
+          "bookingAvailability": "Open year-round, best from May to October",
+          "location": "Germany, Black Forest",
+          "duration": "6 days",
+          "adventureLevel": "Moderate",
+          "includedItems": [
+            "Guided hikes through scenic trails",
+            "Accommodations in eco-friendly lodges",
+            "Meals (breakfast, lunch, dinner)",
+            "Transportation to/from Freiburg",
+            "Entrance fees to nature reserves"
+          ],
+          "ecoFriendlyFeatures": [
+            "Eco-conscious lodging with energy-efficient heating",
+            "Support for local conservation projects",
+            "Zero-waste hiking tours",
+            "Use of biodegradable hygiene products"
+          ],
+          "maxGroupSize": 12,
+          "specialInstructions": [
+            "Wear sturdy hiking boots and layered clothing.",
+            "Bring a refillable water bottle to reduce plastic use.",
+            "Prepare for variable weather; rain gear is essential."
+          ]
+        },
+        
+          
+            
+              {
+                "id": "9",
+                "adventureTitle": "Mystic River Rafting",
+                "image": "https://plus.unsplash.com/premium_photo-1669924233912-b5f83c819d2e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fCUyMk15c3RpYyUyMFJpdmVyJTIwUmFmdGluZ3xlbnwwfHwwfHx8MA%3D%3D",
+                "categoryName": "Rafting",
+                "shortDescription": "An exhilarating white-water rafting experience through the dense forest and rugged river landscapes.",
+                "adventureCost": 120,
+                "bookingAvailability": "Available",
+                "location": "Colorado River, USA",
+                "duration": "3 hours",
+                "adventureLevel": "Intermediate",
+                "includedItems": [
+                  "Rafting equipment",
+                  "Safety gear",
+                  "Certified guide",
+                  "Lunch"
+                ],
+                "ecoFriendlyFeatures": [
+                  "Carbon-neutral transportation",
+                  "Eco-friendly rafting gear",
+                  "Waste reduction practices"
+                ],
+                "maxGroupSize": 10,
+                "specialInstructions": [
+                  "Wear non-slip footwear.",
+                  "Bring a change of clothes.",
+                  "Waterproof bags for valuables."
+                ]
+              },
+              {
+                "id": "10",
+                "adventureTitle": "Amazon River Kayaking",
+                "image": "https://plus.unsplash.com/premium_photo-1664366320037-6cad9e3c6e20?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8QW1hem9uJTIwUml2ZXIlMjBLYXlha2luZ3xlbnwwfHwwfHx8MA%3D%3D",
+                "categoryName": "Kayaking",
+                "shortDescription": "A tranquil yet awe-inspiring kayak tour through the Amazon Rainforest, exploring secluded tributaries and observing wildlife.",
+                "adventureCost": 200,
+                "bookingAvailability": "Limited slots available",
+                "location": "Amazon River, Brazil",
+                "duration": "6 hours",
+                "adventureLevel": "Beginner",
+                "includedItems": [
+                  "Kayak & paddle",
+                  "Life jacket",
+                  "Expert naturalist guide",
+                  "Refreshments"
+                ],
+                "ecoFriendlyFeatures": [
+                  "Eco-friendly kayaks",
+                  "Wildlife conservation donations",
+                  "Support for local communities"
+                ],
+                "maxGroupSize": 8,
+                "specialInstructions": [
+                  "Wear light, breathable clothing.",
+                  "Bring insect repellent.",
+                  "Do not disturb wildlife."
+                ]
+              }
+             
+          
+          
+        
+
+       
+          
+
+        
+      
+
+    
+  
+      
+    
+
+    
+   
+  ]
+  
