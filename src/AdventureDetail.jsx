@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useContext } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
-
+import { AuthContext } from "./Components/Providers/AuthProvider";
+import { Link } from "react-router-dom";
 const AdventureDetail = () => {
+  const{user}=useContext(AuthContext);
     const {id}=useParams();
     const data=useLoaderData();
     const adventure=data.find(adventure=>adventure.id===id)
@@ -12,7 +14,7 @@ const{image,categoryName,shortDescription,adventureTitle,adventureLevel,adventur
 
     return (
         <div>
-            <h2 className="text-center text-4xl font-bold my-7 text-orange-500">Adventure Details:{id}</h2>
+            <h2 className="text-center text-4xl font-bold my-7 text-orange-500">Adventure Details:{categoryName}</h2>
             
            <p className="p-8">
            An adventure is an exciting experience or undertaking that is typically bold, sometimes risky. 
@@ -57,6 +59,11 @@ const{image,categoryName,shortDescription,adventureTitle,adventureLevel,adventur
     </div>
   </div>
 </div>
+{
+  user && <>
+    <Link to='/adventures/:id'>Adventure Detail</Link>
+  </>
+}
         </div>
     );
 };

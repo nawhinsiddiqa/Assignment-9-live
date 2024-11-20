@@ -1,6 +1,9 @@
+import { useContext } from "react";
 import { Link } from "react-router-dom";
+import { AuthContext } from "./Components/Providers/AuthProvider";
 
 const Adventure = ({adventure}) => {
+  const{user}=useContext(AuthContext)
     const{id,adventureTitle,includedItem,image,ecoFriendlyFeatures}=adventure;
     return (
     

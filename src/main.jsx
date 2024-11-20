@@ -10,6 +10,12 @@ import Register from './Components/Register';
 import AdventureDetail from './AdventureDetail';
 import AuthProvider from './Components/Providers/AuthProvider';
 import FirstStep from './FirstStep';
+import UserProfile from './Components/UserProfile';
+import UpdateProfile from './Components/UpdateProfile';
+import PrivateRoute from './route/PrivateRoute';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 import './index.css'
 import {
   createBrowserRouter,
@@ -36,12 +42,20 @@ const router = createBrowserRouter([
       },
       {
         path:'/adventures/:id',
-        element:<AdventureDetail></AdventureDetail>,
+        element:<PrivateRoute><AdventureDetail></AdventureDetail></PrivateRoute>,
         loader:()=>fetch('/fakeFileData.json')
       },
       {
         path:'/firstStep',
         element:<FirstStep></FirstStep>
+      },
+      {
+        path:'/userProfile',
+        element:<PrivateRoute><UserProfile></UserProfile></PrivateRoute>
+      },
+      {
+        path:'/updateProfile',
+        element:<UpdateProfile></UpdateProfile>,
       }
     ]
   },
@@ -54,5 +68,6 @@ createRoot(document.getElementById('root')).render(
     <AuthProvider>
         <RouterProvider router={router} />
         </AuthProvider>
+        <ToastContainer />
   </StrictMode>,
 )

@@ -37,11 +37,12 @@ const Navbar = () => {
       </div>
       <ul
         tabIndex={0}
-        className="menu menu-sm dropdown-content font-bold bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+        className="menu menu-sm dropdown-content text-blue-500 font-bold bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
         <li><NavLink to="/">Home</NavLink></li>
         <li><NavLink to="login">Login</NavLink></li>
         <li><NavLink to="register">Register</NavLink></li>
-       
+        <li><NavLink to="/userProfile">UserProfile</NavLink></li>
+        <li><NavLink to="/updateProfile">UpdateProfile</NavLink></li>
         
         
       </ul>
@@ -51,13 +52,21 @@ const Navbar = () => {
     </a>
   </div>
   <div className="navbar-center hidden lg:flex">
-    <ul className="menu menu-horizontal px-1 font-bold">
+    <ul className="menu menu-horizontal px-1 font-bold text-blue-500">
       
       
     <li><NavLink to="/">Home</NavLink></li>
-        <li><NavLink to="login">Login</NavLink></li>
-        <li><NavLink to="register">Register</NavLink></li>
-        <li><NavLink to="/adventures/{id}">AdventureDetail</NavLink></li>
+        <li><NavLink to="/login">Login</NavLink></li>
+        <li><NavLink to="/register">Register</NavLink></li>
+       {
+        user && <>
+        
+        <li><NavLink to="/userProfile">UserProfile</NavLink></li>
+        <li><NavLink to="/updateProfile">UpdateProfile</NavLink></li>
+        
+        </>
+       }
+      
        
       
     </ul>

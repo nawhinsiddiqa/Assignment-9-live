@@ -8,7 +8,8 @@ import { auth } from "../../firebase.init";
  
 const AuthProvider = ({children}) => {
 
-    const[user,setUser]=useState(null)
+    const[user,setUser]=useState(null);
+    const [loading,setLoading]=useState(true);
     const createUser=(email,password)=>{
         return createUserWithEmailAndPassword(auth,email,password);
     }
@@ -30,6 +31,7 @@ const AuthProvider = ({children}) => {
             if(currentUser){
                 console.log('currently logged user',currentUser)
                 setUser(currentUser)
+                setLoading(false);
             }
            else{
             setUser(null)
@@ -49,7 +51,8 @@ const AuthProvider = ({children}) => {
         createUser,
         signInUser,
         signOutUser,
-        signInWithGoogle
+        signInWithGoogle,
+        loading
     }
     return (
         <AuthContext.Provider value={authInfo}>

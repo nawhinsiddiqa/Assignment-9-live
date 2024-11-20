@@ -6,6 +6,7 @@ import { FaEye ,FaEyeSlash} from "react-icons/fa";
 
 import { auth } from "../firebase.init";
 import { sendEmailVerification } from "firebase/auth";
+import { toast } from "react-toastify";
 
 const Register = () => {
   const[success,setSuccess]=useState(false);
@@ -33,11 +34,13 @@ const Register = () => {
 
         if(password.length<6){
           setErrorMessage('Password should be given at least six character or longer');
+         
              return;
         }
         const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z]).{6,}$/;
         if (!passwordRegex.test(password)){
             setErrorMessage('At least one uppercase,one lower case and length 6 character')
+            toast('Successfully registered')
             return;
         }
 
@@ -46,11 +49,15 @@ const Register = () => {
         .then(result=>{
             console.log(result.user)
             setSuccess(true);
+            
             sendEmailVerification(auth.currentUser)
             .then(()=>{
               console.log('verification email sent')
+              
             })
+          
             // navigate('/')
+
             e.target.reset()
         })
         .catch(error=>{
