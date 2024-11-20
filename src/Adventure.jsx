@@ -1,9 +1,10 @@
-
+import { Link } from "react-router-dom";
 
 const Adventure = ({adventure}) => {
-    const{adventureTitle,image,ecoFriendlyFeatures}=adventure;
+    const{id,adventureTitle,image,ecoFriendlyFeatures}=adventure;
     return (
     
+      <Link to={`/adventures/${id}`}>
         <div>
             
             <div className="card card-compact bg-base-100 w-96 shadow-xl">
@@ -13,12 +14,15 @@ const Adventure = ({adventure}) => {
       alt="Adventures" />
   </figure>
   <div className="card-body">
-    <h2 className="card-title">
+    <h2 className="card-title font-bold text-black">
       Title:
       {adventureTitle}</h2>
+      {
+        ecoFriendlyFeatures.map(item=><li>{item}</li>)
+      }
    
     <div className="card-actions justify-end">
-      <button className="btn btn-primary">Explore Now</button>
+     <button className="btn bg-green-400">Explore Now</button>
     </div>
   </div>
 </div>
@@ -26,6 +30,7 @@ const Adventure = ({adventure}) => {
 
 
         </div>
+      </Link>
     );
 };
 

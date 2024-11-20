@@ -3,11 +3,15 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "./Providers/AuthProvider";
 import { useNavigate } from "react-router-dom";
+import { useRef } from "react";
+import { auth } from "../firebase.init";
+import { sendPasswordResetEmail } from "firebase/auth";
 
 
 
 const Login = () => {
-  const{signInUser}=useContext(AuthContext);
+  const emailRef=useRef();
+  const{signInUser, signInWithGoogle}=useContext(AuthContext);
   const navigate=useNavigate();
   const [success,setSuccess]=useState(false);
    const handleLogin=(e)=>{
@@ -20,15 +24,41 @@ const Login = () => {
        .then(result=>{
         console.log(result.user)
         setSuccess(true)
-
+       e.target.reset();
+        
        })
-       navigate('/')
+
+
+     
+       
+      //  navigate('/')
 
        .catch(error=>{
         console.log('ERROR',error.message)
         
        })
    }
+   const handlePassword=()=>{
+    console.log('get me email address',emailRef.current.value);
+    const email=emailRef.current.value;
+    if(!email){
+      console.log('please valid email address')
+    }
+    else{
+      sendPasswordResetEmail(auth,email)
+      .then(()=>{
+        alert(' Password Reset email,please check your email')
+      })
+    }
+   }
+   const handleGoogleSignIn=()=>{
+    signInWithGoogle()
+    .then(result=>{
+      console.log(result.user);
+    })
+    .catch(error=>console.log(error.message))
+   }
+
 
     return (
         <div>
@@ -46,14 +76,20 @@ const Login = () => {
           <label className="label">
             <span className="label-text">Email</span>
           </label>
-          <input type="email" name="email" placeholder="email" className="input input-bordered" required />
+          <input type="email"
+           name="email" ref={emailRef}
+          placeholder="email" className="input input-bordered" required />
         </div>
         <div className="form-control">
           <label className="label">
             <span className="label-text">Password</span>
           </label>
-          <input type="password"  name="password" placeholder="password" className="input input-bordered" required />
-          <label className="label">
+          <input type="password"  name="password" 
+          
+          placeholder="password" className="input input-bordered" required />
+          <label 
+          onClick={handlePassword}
+          className="label">
             <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
           </label>
         </div>
@@ -61,8 +97,14 @@ const Login = () => {
           <button className="btn btn-primary">Login</button>
         </div>
       </form>
-      <p className="ml-4 mb-4 mr-4">
+      <p className="ml-4 mb-4 mr-4 font-bold">
         Welcome to this website?please <Link to="/register">Register</Link>
+
+      </p>
+      <p>
+        <button
+        onClick={handleGoogleSignIn}
+        className="btn bg-slate-500 w-full mx-auto text-black">Google</button>
       </p>
       {
         success && <p className="text-2xl bg-green-700">Successfully Login</p>

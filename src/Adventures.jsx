@@ -20,6 +20,9 @@
                     adventures.map(adventure=><Adventure adventure={adventure} key={adventure.id} ></Adventure>)
                 }
             </div>
+            <div>
+               
+            </div>
         </div>
     );
    };

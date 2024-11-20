@@ -7,6 +7,7 @@ import Root from './Components/Root';
 import Home from './Components/Home';
 import Login from './Components/Login';
 import Register from './Components/Register';
+import AdventureDetail from './AdventureDetail';
 import AuthProvider from './Components/Providers/AuthProvider';
 import './index.css'
 import {
@@ -31,6 +32,11 @@ const router = createBrowserRouter([
       {
         path:'/register',
         element:<Register></Register>,
+      },
+      {
+        path:'/adventures/:id',
+        element:<AdventureDetail></AdventureDetail>,
+        loader:()=>fetch('/fakeFileData.json')
       }
     ]
   },
