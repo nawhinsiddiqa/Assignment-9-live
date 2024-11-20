@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 const Adventure = ({adventure}) => {
-    const{id,adventureTitle,image,ecoFriendlyFeatures}=adventure;
+    const{id,adventureTitle,includedItem,image,ecoFriendlyFeatures}=adventure;
     return (
     
       <Link to={`/adventures/${id}`}>
@@ -20,7 +20,7 @@ const Adventure = ({adventure}) => {
       {
         ecoFriendlyFeatures.map(item=><li>{item}</li>)
       }
-   
+      
     <div className="card-actions justify-end">
      <button className="btn bg-green-400">Explore Now</button>
     </div>
