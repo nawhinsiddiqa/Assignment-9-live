@@ -30,7 +30,7 @@ const Adventure = ({adventure}) => {
 
 
         </div>
-      </Link>
+       </Link>
     );
 };
 

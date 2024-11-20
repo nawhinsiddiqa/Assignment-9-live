@@ -9,6 +9,7 @@ import Login from './Components/Login';
 import Register from './Components/Register';
 import AdventureDetail from './AdventureDetail';
 import AuthProvider from './Components/Providers/AuthProvider';
+import FirstStep from './FirstStep';
 import './index.css'
 import {
   createBrowserRouter,
@@ -37,6 +38,10 @@ const router = createBrowserRouter([
         path:'/adventures/:id',
         element:<AdventureDetail></AdventureDetail>,
         loader:()=>fetch('/fakeFileData.json')
+      },
+      {
+        path:'/firstStep',
+        element:<FirstStep></FirstStep>
       }
     ]
   },
