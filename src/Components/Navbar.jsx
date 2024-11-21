@@ -2,7 +2,9 @@ import React from 'react';
 import { NavLink ,Link} from 'react-router-dom';
 import { AuthContext } from './Providers/AuthProvider';
 import { useContext } from 'react';
+import { toast } from 'react-toastify';
 import { useNavigate } from "react-router-dom";
+import { CgProfile } from "react-icons/cg";
 const Navbar = () => {
 
   const {user,signOutUser}=useContext(AuthContext);
@@ -11,7 +13,7 @@ const Navbar = () => {
   const handleSignOut=()=>{
     signOutUser()
     .then(()=>{
-      console.log('user sign out successfully')
+      toast('User Sign Out Successfully')
       navigate('/login')
     })
     .catch(error=>console.log('ERROR',error.message))
@@ -70,8 +72,10 @@ const Navbar = () => {
        
       
     </ul>
+   
   </div>
   <div className="navbar-end">
+  <CgProfile />
   {
     user ? <>
     <span>{user.email}</span>

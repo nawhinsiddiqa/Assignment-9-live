@@ -1,9 +1,10 @@
 import React, { useContext } from "react";
-import { useLoaderData, useParams } from "react-router-dom";
+import { useLoaderData, useNavigate, useParams } from "react-router-dom";
 import { AuthContext } from "./Components/Providers/AuthProvider";
 import { Link } from "react-router-dom";
 const AdventureDetail = () => {
   const{user}=useContext(AuthContext);
+  const navigate=useNavigate()
     const {id}=useParams();
     const data=useLoaderData();
     const adventure=data.find(adventure=>adventure.id===id)
@@ -11,6 +12,10 @@ const AdventureDetail = () => {
    
 const{image,categoryName,shortDescription,adventureTitle,adventureLevel,adventureCost,bookingAvailability,location,duration,includedItems,
     specialInstructions}=adventure;
+
+    const handleTalk=()=>{
+          navigate('/')
+    }
 
     return (
         <div>
@@ -55,7 +60,13 @@ const{image,categoryName,shortDescription,adventureTitle,adventureLevel,adventur
       </div>
       
       <p className="font-bold">Cost::{adventureCost}</p>
-      <button className="btn bg-purple-600">Talk to More</button>
+ 
+  
+    <a  onClick={handleTalk} className='btn'>Talk With Expert</a>
+    
+
+    
+  
     </div>
   </div>
 </div>
