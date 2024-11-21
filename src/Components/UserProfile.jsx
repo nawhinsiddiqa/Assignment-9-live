@@ -20,7 +20,7 @@ const UserProfile = () => {
   <div className="hero bg-base-200 my-4 p-6">
   <div className="hero-content text-center">
     <div className="max-w-md">
-      <h1 className="text-4xl font-bold">Welcome To Our Page{user.name}</h1>
+      <h1 className="text-4xl font-bold">Welcome To Our Page{user.email}</h1>
       <p className="">
       
       <div className="hero bg-base-200 min-h-screen">
@@ -32,13 +32,13 @@ const UserProfile = () => {
           <label className="label">
             <span className="label-text">Name</span>
           </label>
-          <input type="text" placeholder="name" className="input input-bordered" required />
+          <input type="text" name="name" placeholder="name" className="input input-bordered" required />
         </div>
         <div className="form-control">
           <label className="label">
             <span className="label-text">Email</span>
           </label>
-          <input type="password" placeholder="Email" className="input input-bordered" required />
+          <input type="email" name="email" placeholder="Email" className="input input-bordered" required />
           <label className="label">
             <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
           </label>

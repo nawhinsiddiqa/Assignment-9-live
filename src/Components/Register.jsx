@@ -40,7 +40,6 @@ const Register = () => {
         const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z]).{6,}$/;
         if (!passwordRegex.test(password)){
             setErrorMessage('At least one uppercase,one lower case and length 6 character')
-            toast('Successfully registered')
             return;
         }
 
@@ -49,14 +48,17 @@ const Register = () => {
         .then(result=>{
             console.log(result.user)
             setSuccess(true);
+            toast('Successfully registered')
             
             sendEmailVerification(auth.currentUser)
             .then(()=>{
               console.log('verification email sent')
               
             })
-          
-            // navigate('/')
+          setTimeout(()=>{
+            navigate('/')
+          },1000)
+            
 
             e.target.reset()
         })

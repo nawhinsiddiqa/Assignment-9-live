@@ -6,6 +6,7 @@ import { useNavigate } from "react-router-dom";
 import { useRef } from "react";
 import { auth } from "../firebase.init";
 import { sendPasswordResetEmail } from "firebase/auth";
+import { toast } from "react-toastify";
 
 
 
@@ -24,14 +25,17 @@ const Login = () => {
        .then(result=>{
         console.log(result.user)
         setSuccess(true)
+         toast('successfully Login')
        e.target.reset();
         
        })
 
-
+       setTimeout(()=>{
+        navigate('/')
+      },1000)
      
        
-      //  navigate('/')
+      
 
        .catch(error=>{
         console.log('ERROR',error.message)
@@ -106,9 +110,7 @@ const Login = () => {
         onClick={handleGoogleSignIn}
         className="btn bg-slate-500 w-full mx-auto text-black">Google</button>
       </p>
-      {
-        success && <p className="text-2xl bg-green-700">Successfully Login</p>
-      }
+      
     </div>
   </div>
 </div>

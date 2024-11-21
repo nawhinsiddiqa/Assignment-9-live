@@ -16,9 +16,7 @@ const FirstStep = () => {
          <p className="text-center my-8">Virtual reality travel experiences typically refer to VR tourism videos made for VR headsets.<br></br>
              These virtual travel experiences aim to create a feeling that is as much like being in the real destination as is possible.</p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-        <img src=""></img>
-          </div>
+          
 
         </div>
         

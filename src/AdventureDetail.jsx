@@ -59,12 +59,7 @@ const{image,categoryName,shortDescription,adventureTitle,adventureLevel,adventur
     </div>
   </div>
 </div>
-{
-  user && <>
-    <Link to='/adventures/:id'>Adventure Detail</Link>
-  </>
-}
-        </div>
+      </div>
     );
 };
 
