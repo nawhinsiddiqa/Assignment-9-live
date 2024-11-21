@@ -2,7 +2,9 @@ import { Link } from "react-router-dom";
 
 const NextLevel = () => {
     return (
-        <div className="relative">
+        <div className="relative" data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500">
          <h1 className="text-5xl font-bold text-center my-6 text-black">Join Our NewsLetter</h1>
         
          <img className="w-[1200px] mx-auto my-9 h-96" src="https://news.yale.edu/sites/default/files/styles/featured_media/public/ynews-salty-oceans_1.png?itok=bOjaEkcu&c=a75e254fe1da31f2732f6b0d7bce1413"></img>

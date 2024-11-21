@@ -2,7 +2,7 @@
 
 const Banner = () => {
     return (
-        <div className="w-7/12 mx-auto my-8">
+        <div className="w-7/12 mx-auto my-8"  data-aos="flip-left">
           <h1 className="text-4xl font-bold w-6/12 mx-auto my-5">The Roaming Routes</h1>
           <p className="my-5">Eco-adventure experiences combine the thrill of exploring natural landscapes with a commitment to sustainability and conservation. These types of adventures are crafted to minimize environmental impact while immersing participants in the beauty and diversity of our planet’s ecosystems</p>
             <div className="carousel w-full">

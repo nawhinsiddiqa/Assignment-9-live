@@ -3,6 +3,7 @@ import { useRef } from "react";
 
 import { toast } from "react-toastify";
 import { auth } from "./firebase.init";
+import { Helmet } from "react-helmet-async";
 const ForgetPassword = () => {
 
     const emailRef=useRef();
@@ -29,6 +30,9 @@ const ForgetPassword = () => {
     }
     return (
         <div>
+          <Helmet>
+            <title>Forget Password</title>
+          </Helmet>
            <h1 className=" text-3xl font-bold text-center my-6" >Forget Password</h1> 
 
            <div className="hero bg-base-200 min-h-screen">

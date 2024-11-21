@@ -2,7 +2,7 @@
 
 const Footer = () => {
     return (
-        <div>
+        <div data-aos="fade-up-right">
             <footer className=" w-10/12 mx-auto footer bg-neutral text-neutral-content p-10">
   <aside>
   <img src="https://travelwp.physcode.com/main-demo/wp-content/uploads/sites/7/2023/07/logo-black.png"></img>

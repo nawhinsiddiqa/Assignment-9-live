@@ -7,6 +7,7 @@ import { FaEye ,FaEyeSlash} from "react-icons/fa";
 import { auth } from "../firebase.init";
 import { sendEmailVerification } from "firebase/auth";
 import { toast } from "react-toastify";
+import { Helmet } from "react-helmet-async";
 
 const Register = () => {
   const[success,setSuccess]=useState(false);
@@ -81,6 +82,9 @@ const Register = () => {
 
     return (
         <div>
+          <Helmet>
+            <title>Register Page</title>
+          </Helmet>
             <div>
             <div className="hero bg-base-200 min-h-screen">
   <div className="hero-content flex-col">

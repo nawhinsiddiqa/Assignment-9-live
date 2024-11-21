@@ -11,7 +11,9 @@
         .then(data=>setAdventures(data))
     },[])
     return (
-        <div>
+        <div data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500">
             <h1 className="text-4xl font-bold text-black text-center my-8">Adventures Experience Section</h1>
            
             <h1 ></h1>

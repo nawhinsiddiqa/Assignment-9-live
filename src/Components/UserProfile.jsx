@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { AuthContext } from "./Providers/AuthProvider";
 import { useNavigate } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 
 const UserProfile = () => {
     const{user}=useContext(AuthContext);
@@ -10,6 +11,9 @@ const UserProfile = () => {
    }
     return (
         <div>
+          <Helmet>
+            <title>User Profile</title>
+          </Helmet>
         <div className="">
             <img className="w-40 mx-auto"
             src="https://th.bing.com/th?q=Woman+Avatar&w=120&h=120&c=1&rs=1&qlt=90&cb=1&pid=InlineBlock&mkt=en-WW&cc=BD&setlang=en&adlt=moderate&t=1&mw=247"></img>

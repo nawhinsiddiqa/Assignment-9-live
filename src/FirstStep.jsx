@@ -2,7 +2,7 @@
 
 const FirstStep = () => {
     return (
-        <div>
+        <div data-aos="flip-down">
              <h1 className="text-center text-3xl font-bold text-purple-600 my-12">Enjoy A Virtual Adventure Trip</h1>
              
              <img className="w-8/12 mx-auto w-[800px] h-[400px] my-13" src="https://eco-adventure.org/living_on_a_sunny_island.jpg"></img>

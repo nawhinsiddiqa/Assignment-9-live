@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import { AuthContext } from "./Providers/AuthProvider";
+import { Helmet } from "react-helmet-async";
 
 
 const UpdateProfile = () => {
@@ -18,6 +19,9 @@ const UpdateProfile = () => {
     }
     return (
         <div>
+          <Helmet>
+            <title>Update Profile</title>
+          </Helmet>
           <div>
 
 

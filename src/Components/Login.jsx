@@ -7,6 +7,7 @@ import { useRef } from "react";
 import { auth } from "../firebase.init";
 import { sendPasswordResetEmail } from "firebase/auth";
 import { toast } from "react-toastify";
+import { Helmet } from "react-helmet-async";
 
 
 
@@ -67,6 +68,9 @@ const Login = () => {
 
     return (
         <div>
+          <Helmet>
+            <title>Login Page</title>
+          </Helmet>
             <div className="hero bg-base-200 min-h-screen">
   <div className="hero-content flex-col">
     <div className="text-center">

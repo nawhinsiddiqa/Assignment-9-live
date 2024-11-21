@@ -19,7 +19,9 @@ const Navbar = () => {
     .catch(error=>console.log('ERROR',error.message))
   }
     return (
-        <div>
+        <div data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500">
             <div className="navbar bg-base-100 w-10/12 mx-auto">
   <div className="navbar-start">
     <div className="dropdown">

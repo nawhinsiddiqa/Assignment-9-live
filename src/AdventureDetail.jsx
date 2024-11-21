@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import { useLoaderData, useNavigate, useParams } from "react-router-dom";
 import { AuthContext } from "./Components/Providers/AuthProvider";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 const AdventureDetail = () => {
   const{user}=useContext(AuthContext);
   const navigate=useNavigate()
@@ -19,6 +20,9 @@ const{image,categoryName,shortDescription,adventureTitle,adventureLevel,adventur
 
     return (
         <div>
+          <Helmet>
+            <title>Adventure Details</title>
+          </Helmet>
             <h2 className="text-center text-4xl font-bold my-7 text-orange-500">Adventure Details:{categoryName}</h2>
             
            <p className="p-8">
