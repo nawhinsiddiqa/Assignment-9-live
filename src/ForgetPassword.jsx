@@ -50,7 +50,7 @@ const ForgetPassword = () => {
           
         </div>
         <div className="form-control mt-6">
-          <button onClick={handleForgetPassword} className="btn btn-primary">Forget Password</button>
+          <button onClick={handleForgetPassword} className="btn btn-primary">Reset Password</button>
         </div>
       </form>
     </div>
