@@ -7,7 +7,7 @@ const UserProfile = () => {
     const{user}=useContext(AuthContext);
     const navigate=useNavigate();
    const handleUpdate=()=>{
-          navigate('/updateProfile')
+          navigate('/updateProfile',{ state: { email: "abc@gmail.com" } })
    }
     return (
         <div>
@@ -24,7 +24,7 @@ const UserProfile = () => {
   <div className="hero bg-base-200 my-4 p-6">
   <div className="hero-content text-center">
     <div className="max-w-md">
-      <h1 className="text-4xl font-bold">Welcome To Our Page{user.email}</h1>
+      <h1 className="text-4xl font-bold">Welcome To Our Page {user.email}</h1>
       <p className="">
       
       <div className="hero bg-base-200 min-h-screen">

@@ -8,8 +8,8 @@ The importance of travel in our lives cannot be overstated. It helps us build li
 Ecotourism activities can look like cycling, hiking, small-group wildlife tours, kayaking and tree planting, alongside low-impact ways to get out in nature and give back to local communities. The easiest way to build this responsible form of travel into your itinerary is to take part in ecotourism activities.
 
 ### Used in this projects
- different route based ontheir different names
- AOS package
+ different route based ontheir different names<br>
+ AOS package<br>
  different types of technology
 
  ### live Project

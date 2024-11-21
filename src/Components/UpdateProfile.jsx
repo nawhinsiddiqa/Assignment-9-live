@@ -1,20 +1,30 @@
 import { useNavigate } from "react-router-dom";
 import { AuthContext } from "./Providers/AuthProvider";
 import { Helmet } from "react-helmet-async";
+import { useContext } from "react";
+import { auth } from "../firebase.init";
+import { updateProfile } from "firebase/auth";
 
 
 const UpdateProfile = () => {
-  const{user}=useContext(AuthContext)
+  const{user}=useContext(AuthContext);
   
     const handleLogin=e=>{
       e.preventDefault();
-      const email=e.target.email.value;
+      const name=e.target.email.value;
       const photo=e.target.photo.value;
-      console.log(email,photo)
+      console.log(name,photo)
+
+      const profile={
+        displayName:name,
+        photoURL:photo
+      }
     }
 
+    
+
     const navigate=useNavigate();
-    const handleUpdate=()=>{
+    const handleUpdateProfile=()=>{
            navigate('/userProfile')
     }
     return (
@@ -35,9 +45,9 @@ const UpdateProfile = () => {
       <form  onSubmit={handleLogin}className="card-body">
         <div className="form-control">
           <label className="label">
-            <span className="label-text">Email</span>
+            <span className="label-text">Name</span>
           </label>
-          <input type="email"  name="email" placeholder="email" className="input input-bordered" required />
+          <input type="text"  name="name" placeholder="name" className="input input-bordered" required />
         </div>
         <div className="form-control">
           <label className="label">
