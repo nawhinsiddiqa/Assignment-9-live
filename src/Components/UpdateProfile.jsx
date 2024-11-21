@@ -1,10 +1,20 @@
+import { useNavigate } from "react-router-dom";
+import { AuthContext } from "./Providers/AuthProvider";
 
 
 const UpdateProfile = () => {
+  const{user}=useContext(AuthContext)
+  
     const handleLogin=e=>{
       e.preventDefault();
       const email=e.target.email.value;
       const photo=e.target.photo.value;
+      console.log(email,photo)
+    }
+
+    const navigate=useNavigate();
+    const handleUpdate=()=>{
+           navigate('/userProfile')
     }
     return (
         <div>
@@ -33,7 +43,7 @@ const UpdateProfile = () => {
          
         </div>
         <div className="form-control mt-6">
-        <button className="btn btn-ghost text-center">Update information</button>
+        <button onClick={handleUpdateProfile} className="btn btn-ghost text-center">Update information</button>
         </div>
       </form>
     </div>

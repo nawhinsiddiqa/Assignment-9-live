@@ -10,6 +10,8 @@ import Register from './Components/Register';
 import AdventureDetail from './AdventureDetail';
 import AuthProvider from './Components/Providers/AuthProvider';
 import FirstStep from './FirstStep';
+import SecondStep from './SecondStep';
+import NextLevel from './NextLevel';
 import UserProfile from './Components/UserProfile';
 import UpdateProfile from './Components/UpdateProfile';
 import PrivateRoute from './route/PrivateRoute';
@@ -56,6 +58,14 @@ const router = createBrowserRouter([
       {
         path:'/updateProfile',
         element:<PrivateRoute><UpdateProfile></UpdateProfile></PrivateRoute>,
+      },
+      {
+        path:'/secondStep',
+        element:<SecondStep></SecondStep>,
+      },
+      {
+        path:'/nextLevel',
+        element:<NextLevel></NextLevel>
       }
     ]
   },
