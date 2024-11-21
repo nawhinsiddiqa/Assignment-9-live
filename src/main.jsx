@@ -13,6 +13,7 @@ import FirstStep from './FirstStep';
 import SecondStep from './SecondStep';
 import NextLevel from './NextLevel';
 import UserProfile from './Components/UserProfile';
+import ForgetPassword from './ForgetPassword';
 import UpdateProfile from './Components/UpdateProfile';
 import PrivateRoute from './route/PrivateRoute';
 import { ToastContainer } from 'react-toastify';
@@ -66,6 +67,10 @@ const router = createBrowserRouter([
       {
         path:'/nextLevel',
         element:<NextLevel></NextLevel>
+      },
+      {
+        path:'/forgetPassword',
+        element:<ForgetPassword></ForgetPassword>
       }
     ]
   },

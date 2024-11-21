@@ -43,17 +43,18 @@ const Login = () => {
        })
    }
    const handlePassword=()=>{
-    console.log('get me email address',emailRef.current.value);
-    const email=emailRef.current.value;
-    if(!email){
-      console.log('please valid email address')
-    }
-    else{
-      sendPasswordResetEmail(auth,email)
-      .then(()=>{
-        alert(' Password Reset email,please check your email')
-      })
-    }
+    // console.log('get me email address',emailRef.current.value);
+    // const email=emailRef.current.value;
+    // if(!email){
+    //   console.log('please valid email address')
+    // }
+    // else{
+    //   sendPasswordResetEmail(auth,email)
+    //   .then(()=>{
+    //     alert(' Password Reset email,please check your email')
+    //   })
+    // }
+      navigate('/forgetPassword')
    }
    const handleGoogleSignIn=()=>{
     signInWithGoogle()
