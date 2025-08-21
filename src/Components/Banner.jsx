@@ -1,37 +1,37 @@
 
+import { Carousel } from 'react-responsive-carousel';
+
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import img1 from '../assets/slider-1.jpg'
+import img2 from '../assets/slider-22.jpg'
+import img3 from '../assets/slider-33.jpg'
+
+
+
 
 const Banner = () => {
     return (
-        <div className="w-7/12 mx-auto my-8"  data-aos="flip-left">
-          <h1 className="text-4xl font-bold w-6/12 mx-auto my-5">The Roaming Routes</h1>
-          <p className="my-5">Eco-adventure experiences combine the thrill of exploring natural landscapes with a commitment to sustainability and conservation. These types of adventures are crafted to minimize environmental impact while immersing participants in the beauty and diversity of our planet’s ecosystems</p>
-            <div className="carousel w-full">
-  <div id="item1" className="carousel-item w-full">
-    <img
-      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVkfaiQUPYO0OWCzXuqBDWqHhXDpfPRTiRPw&s"
+        <div className="w-7/12 mx-auto my-8" data-aos="flip-left">
 
-      className="w-[1020px] h-[300px]" />
-  </div>
-  <div id="item2" className="carousel-item w-full">
-    <img
-      src="https://www.pipeaway.com/wp-content/uploads/2023/07/backpacking-swiss-alps-photo-by-janis-fasel-unsplash.jpg"
-      className="w-[1020px] h-[300px]" />
-  </div>
-  <div id="item3" className="carousel-item w-full">
-    <img
-      src="https://plus.unsplash.com/premium_photo-1694743671375-ace436b4d797?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8ZHJlYW18ZW58MHx8MHx8fDA%3D"
+            <Carousel>
+                <div>
+                    <img src={img1} />
+                    <p className="text-2xl font-bold mt-5">The next step of your expectation</p>
+                </div>
+                <div>
+                    <img src={img2} />
+                    <p className="text-2xl font-bold mt-5">
 
-      className="w-[1020px] h-[300px]" />
-  </div>
-  
-</div>
-<div className="flex w-full justify-center gap-2 py-2">
-  <a href="#item1" className="btn btn-xs">1</a>
-  <a href="#item2" className="btn btn-xs">2</a>
-  <a href="#item3" className="btn btn-xs">3</a>
+                        Patient satisfaction is not just our goal, it is our mission
+                    </p>
+                </div>
+                <div>
+                    <img src={img3} />
+                    <p className="text-2xl font-bold mt-5"> Return the patients in society with normal appearance
+                    </p>
+                </div>
+            </Carousel>
 
-</div>
-            
         </div>
     );
 };

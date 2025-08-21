@@ -5,17 +5,20 @@ import Navbar from './Components/Navbar';
 import Footer from './Components/Footer';
 import Root from './Components/Root';
 import Home from './Components/Home';
-import Login from './Components/Login';
-import Register from './Components/Register';
-import AdventureDetail from './AdventureDetail';
-import AuthProvider from './Components/Providers/AuthProvider';
-import FirstStep from './FirstStep';
-import SecondStep from './SecondStep';
-import NextLevel from './NextLevel';
-import UserProfile from './Components/UserProfile';
-import ForgetPassword from './ForgetPassword';
-import UpdateProfile from './Components/UpdateProfile';
-import PrivateRoute from './route/PrivateRoute';
+import Service from './Components/Service'
+import AboutDoctor from './Components/AboutDoctor';
+
+
+
+
+import View1 from './Components/View1';
+import View2 from './Components/View2'
+import View3 from './Components/View3';
+import View4 from './Components/View4';
+
+import Contact from './Components/Contact';
+import FeatureSection from './Components/FeatureSection';
+
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -36,43 +39,45 @@ const router = createBrowserRouter([
         path:'/',
         element:<Home></Home>,
       },
-      {
-        path:'/login',
-        element:<Login></Login>,
+      
+       {
+        path:'/service',
+        element:<Service></Service>
       },
-      {
-        path:'/register',
-        element:<Register></Register>,
+      
+       {
+        path:'/view1',
+        element:<View1></View1>
       },
-      {
-        path:'/adventures/:id',
-        element:<PrivateRoute><AdventureDetail></AdventureDetail></PrivateRoute>,
-        loader:()=>fetch('/fakeFileData.json')
+       {
+        path:'/view2',
+        element:<View2></View2>
       },
-      {
-        path:'/firstStep',
-        element:<FirstStep></FirstStep>
+       {
+        path:'/view3',
+        element:<View3></View3>
       },
-      {
-        path:'/userProfile',
-        element:<PrivateRoute><UserProfile></UserProfile></PrivateRoute>
+       {
+        path:'/view4',
+        element:<View4></View4>
       },
-      {
-        path:'/updateProfile',
-        element:<PrivateRoute><UpdateProfile></UpdateProfile></PrivateRoute>,
+       {
+        path:'/featureSection',
+        element:<FeatureSection></FeatureSection>
       },
+
+    
       {
-        path:'/secondStep',
-        element:<SecondStep></SecondStep>,
+        path:'/aboutDoctor',
+        element:<AboutDoctor></AboutDoctor>
       },
+      
       {
-        path:'/nextLevel',
-        element:<NextLevel></NextLevel>
+        path:'/contact',
+        element:<Contact></Contact>,
       },
-      {
-        path:'/forgetPassword',
-        element:<ForgetPassword></ForgetPassword>
-      }
+   
+    
     ]
   },
 ]);
@@ -82,9 +87,9 @@ const router = createBrowserRouter([
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <HelmetProvider>
-    <AuthProvider>
+    
         <RouterProvider router={router} />
-        </AuthProvider>
+       
         <ToastContainer />
     </HelmetProvider>
   </StrictMode>,

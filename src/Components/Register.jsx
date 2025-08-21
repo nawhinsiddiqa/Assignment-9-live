@@ -16,6 +16,7 @@ const Register = () => {
 
   const navigate=useNavigate();
     const {createUser,signInWithGoogle}=useContext(AuthContext);
+    
     const handleRegister=(e)=>{
         e.preventDefault();
         const name=e.target.name.value;
@@ -152,7 +153,7 @@ const Register = () => {
       
       <p className="ml-4 mb-4 mr-4 font-bold">
         Already Have an account?please
-         <Link to="/login">Login</Link>.
+        
       </p>
       <p>
         <button

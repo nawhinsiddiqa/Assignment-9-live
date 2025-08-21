@@ -1,8 +1,8 @@
 import Banner from "./Banner";
-import Adventures from "../Adventures";
-import FirstStep from "../FirstStep";
-import SecondStep from "../SecondStep";
-import NextLevel from "../NextLevel";
+import HomePage1 from "./HomePage1";
+import Feature from "./Feature";
+
+
 import { Helmet } from "react-helmet-async";
 
 ;
@@ -13,13 +13,13 @@ const Home = () => {
     return (
         <div>
             <Helmet>
-                <title>Eco Adventure | Home</title>
+                <title> Artificial Eye | Home</title>
             </Helmet>
             <Banner></Banner>
-            <Adventures></Adventures>
-            <FirstStep></FirstStep>
-            <SecondStep></SecondStep>
-            <NextLevel></NextLevel>
+            <HomePage1></HomePage1>
+           <Feature></Feature>
+           
+          
         </div>
     );
 };
